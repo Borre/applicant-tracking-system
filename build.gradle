@@ -1,0 +1,16 @@
+apply plugin: "groovy"
+apply plugin: "application"
+
+mainClassName = "com.borre.Application"
+
+version = "0.1"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("com.sparkjava:spark-core:1.1.1")
+    compile("org.codehaus.groovy:groovy-all:2.3.0")
+    runtime("mysql:mysql-connector-java:5.1.6")
+}
